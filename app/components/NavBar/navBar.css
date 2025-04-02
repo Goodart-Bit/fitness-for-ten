@@ -1,0 +1,132 @@
+.flex-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(240, 140, 140, 0.2), rgba(240, 140, 140, 0.2)), linear-gradient(90deg, #FFFFFF 0%, #4086C2 31%, #F0532C 100%);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    border-right: black 3px solid;
+    margin: 20px 0 20px;
+    color: black;
+    font-weight: 550;
+}
+
+ul li:hover {
+    cursor: pointer;
+    color: white;
+}
+
+ul img:first-child {
+    margin: 10px 0 10px;
+    margin-right: auto;
+}
+
+ul li:last-child {
+    margin-right: auto;
+    border-right: none;
+    padding: 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: auto auto;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.accented {
+    color: #ED542E !important;
+    font-weight: bold;
+}
+
+.footer-container ul li:first-child {
+    margin: 0;
+}
+
+.footer-container ul li {
+    color: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer-container:last-child {
+    grid-column: 1 / -1;
+}
+
+.footer-options {
+    display: flex;
+    gap: 40px;
+}
+
+
+ul.footer-option-list {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+li.bullet-ovr:before {
+    /* For a round bullet */
+    content: '\2022';
+    /* For a square bullet */
+    /*content:'\25A0';*/
+    display: block;
+    position: relative;
+    max-width: 0px;
+    max-height: 0px;
+    left: -10px;
+    top: -3px;
+    color: #ED542E;
+    font-size: 20px;
+  }
+
+.footer-option-list li {
+    display: list-item;
+}
+
+.footer-container > img {
+    right: 0;
+    width: 30%;
+    margin-left: auto;
+}
+
+.socials {
+    gap: 7px;
+}
+
+.social-icon {
+    filter: invert(1);
+    align-self: self-start;
+    width: 25px;
+}
+
+.timings {
+    padding-left: 10px;
+    border-left: #FFFFFF 1px solid;
+}
+
+.footer-container div:last-child {
+    padding-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 1 / -1;
+}
