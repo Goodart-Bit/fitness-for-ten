@@ -41,3 +41,46 @@ a {
     color-scheme: dark;
   }
 }
+
+.accented {
+  color: #ED542E !important;
+  font-weight: bold;
+}
+
+.accented-2 {
+  color: #4086C2 !important;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button {
+  background: #ED542E;
+  border: none;
+  padding: 7px 15px;
+  border: solid black 2px;
+  border-radius: 15px;
+  color: black;
+  font-weight: 550;
+  box-shadow: 82px 86px 122px -83px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 82px 86px 122px -83px rgba(0,0,0,0.3);
+}
+
+a.btn {
+  background: #ED542E;
+  border: none;
+  padding: 7px 15px;
+  border: solid black 2px;
+  border-radius: 15px;
+  color: black;
+  font-weight: 550;
+  box-shadow: 82px 86px 122px -83px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 82px 86px 122px -83px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+

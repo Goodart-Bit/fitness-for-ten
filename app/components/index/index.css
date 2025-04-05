@@ -1,0 +1,94 @@
+.card {
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card::after {
+  border-radius: 20px;
+  content: ""; /* Create an empty pseudo-element */
+  position: absolute; /* Position the overlay on top of the image */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(179, 36, 0, 0.315); /* Black tint with 50% opacity */
+  z-index: 1; /* Make sure the overlay appears above the image */
+}
+
+.card div,
+.card a {
+  position: relative;
+  z-index: 2;
+}
+
+.amenity-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.amenity-card img {
+  width: clamp(150px,100%,250px);
+  height: clamp(200px, 40vh, 250px);
+  align-self: center;
+  border-radius: 20px;
+  border: #ED542E solid 3px;
+}
+
+.amenity-card button:last-child {
+  margin-top: auto;
+  align-self: end;
+}
+
+.qualities {
+    background: rgba(227, 227, 227, 0.44);
+    padding: 10px;
+    border-left: black solid 4px;
+}
+
+.qualities,
+.qualities ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.qualities ul > li:hover {
+    color: black;
+    cursor: auto;
+}
+
+.qualities > ul {
+  gap: 0;
+  list-style: disc;
+}
+
+.qualities ul > li {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.card p {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-weight: 600;
+  text-align: center;
+}
+
+.price {
+  font-weight: bold;
+  font-size: clamp(2rem, 1.5vw, 3rem);
+}
