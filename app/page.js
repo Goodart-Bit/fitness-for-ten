@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import SubscriptionPrev from './components/index/subscription'
 import AmenityDesc from './components/index/description'
 import React, { useRef } from 'react';
+import Link from "next/link";
 
 const amenities = [{
     name:'Training Zones', 
@@ -20,7 +21,7 @@ const amenities = [{
     path:'/gallery/_CSS1420.jpg'}
   ]
 
-const placeMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.293188078281!2d-74.03857182527425!3d4.7190501414987285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8521abcdc06b%3A0x6736c3853d6819d5!2sSpinning%20Center%20Gym%20Calle%20140!5e0!3m2!1ses!2sco!4v1743699397168!5m2!1ses!2sco";
+const placeMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2391.053135306483!2d-105.75318692361206!3d53.18102668708066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53017af09db9ae4b%3A0xaac478e64febee33!2sFitness%20For%2010%2024%2F7!5e0!3m2!1ses-419!2sca!4v1743873585634!5m2!1ses-419!2sca"
 
 export default function Home() {
   const targetRef = useRef(null);
@@ -30,7 +31,7 @@ export default function Home() {
   }
 
   return (
-    <div className={styles["index-card"]}>
+    <div className="main-card">
       <div className={styles["img-holder"]}>
         <div>
           <span className="accented">READY</span> <p>TO TRAIN?</p>
@@ -47,7 +48,7 @@ export default function Home() {
           <SubscriptionPrev name="VIP+" price="24" path="gallery/_CSS0713.jpg" link="https://www.mymemberaccount.com/member-enrollment/10887/group/8882"></SubscriptionPrev>
           <SubscriptionPrev name="Basic+" price="10" path="gallery/_CSS2071.jpg" link="https://www.mymemberaccount.com/member-enrollment/10887/group/8881"></SubscriptionPrev>
         </div>
-        <button>See all</button>
+        <Link href="/subscriptions" class="btn">See all</Link>
       </div>
       <div className={styles.separator}>
         <p>Your <span className="accented-2">body</span> can do it</p>

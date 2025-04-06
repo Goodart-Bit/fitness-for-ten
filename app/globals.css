@@ -68,7 +68,7 @@ button {
   -webkit-box-shadow: 82px 86px 122px -83px rgba(0,0,0,0.3);
 }
 
-a.btn {
+a.btn, .btn {
   background: #ED542E;
   border: none;
   padding: 7px 15px;
@@ -82,5 +82,27 @@ a.btn {
 
 .btn:hover {
   cursor: pointer;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-row-start: 2;
+  background: white;
+  color: black;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 30px;
+  position: relative;
+  padding: 2.5rem;
 }
 

@@ -27,10 +27,23 @@
   z-index: 1; /* Make sure the overlay appears above the image */
 }
 
-.card div,
-.card a {
+.card * {
   position: relative;
   z-index: 2;
+}
+
+.card ul {
+  display: block;
+}
+
+.card ul > li{
+  color: white;
+  border: none;
+  display: block;
+}
+
+.card :last-child {
+  margin-top: auto;
 }
 
 .amenity-card {
