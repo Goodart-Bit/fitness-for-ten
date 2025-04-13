@@ -105,3 +105,82 @@
   font-weight: bold;
   font-size: clamp(2rem, 1.5vw, 3rem);
 }
+
+
+/* 
+/* 
+/* EXTENDED 
+/* 
+*/ 
+
+.amenity-card.extended {
+  flex-direction: row;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.amenity-card.extended img {
+  height: 30vh;
+  width: 30vh;
+}
+
+@media (max-width: 800px) {
+  .amenity-card.extended {
+    margin: 0 -2.5rem 2rem;
+  }
+
+  .amenity-card.extended img {
+    height: 23vh;
+    width: 23vh;
+  }
+}
+
+.amenity-card.extended div:first-child {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.amenity-card.extended .qualities {
+  flex: 2;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.amenity-card.extended .qualities li {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.amenity-card.extended .qualities h2, .amenity-card.extended .qualities h3 {
+  font-size: 1rem;
+}
+
+.amenity-card.extended h2 {
+  align-self: center;
+}
+
+.main-card.description > * {
+  align-self: flex-start;
+}
+
+.main-card > div.video-box {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 80vw;
+}
+
+video {
+  width: 500px;
+  height: 540px;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: 26px 31px 81px -64px rgba(61,61,61,1);
+}
