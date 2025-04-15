@@ -39,10 +39,6 @@ export default function Amenities() {
           <source src="/videos/spaces_1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <video preload="metadata" poster="/gallery/thumbnail_2.jpg" controls>
-          <source src="/videos/spaces_2.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
       </div>
       <h1>GALLERY</h1>
       <GymGalleryCarousel></GymGalleryCarousel>
