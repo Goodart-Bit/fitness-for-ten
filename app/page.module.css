@@ -103,10 +103,18 @@ div.img-holder {
   gap: 10px;
 }
 
-@media (min-height: 800px) and (max-height: 1000px)  { /* Target phones and small tablets */
+@media (max-width: 800px) {
   .memberships {
-      min-height: 250px; /* Prevents it from being too small */
-      max-height: 350px; /* Ensures it doesn't get too long */
+    margin: 0 -2.5rem;
+  }
+
+  .amenities {
+    margin: 0 -2.5rem;
+  }
+
+  .memberships {
+    min-height: 250px; /* Prevents it from being too small */
+    max-height: 400px; /* Ensures it doesn't get too long */
   }
 }
 
@@ -126,11 +134,12 @@ div.img-holder {
   gap: 15px;
   width: 100%;
   align-items: flex-end;
+  font-size: 1rem;
 }
 
 .member-cards > div {
   flex: 1;
-  min-height: 80%;
+  height: 90%;
 }
 
 .member-cards > div:nth-child(2) {

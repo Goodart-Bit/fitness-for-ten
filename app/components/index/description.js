@@ -32,7 +32,7 @@ export default function AmenityDesc({
         </h2>
         {magazine ?  <QualitiesExtend list={qualities}/> : <Qualities list={qualities}/>}
       </div>
-      {!magazine && <button>Learn more...</button>}
+      {!magazine && <a className="btn" href='/amenities'>Learn more...</a>}
     </div>
   );
 }
