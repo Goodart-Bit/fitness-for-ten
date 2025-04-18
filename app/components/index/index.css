@@ -175,10 +175,6 @@
   align-self: center;
 }
 
-.main-card.description > * {
-  align-self: flex-start;
-}
-
 .main-card > div.video-box {
   align-self: center;
   display: flex;

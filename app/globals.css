@@ -106,3 +106,6 @@ a.btn, .btn {
   padding: 2.5rem;
 }
 
+.sub-page.main-card > * {
+  align-self: flex-start;
+}

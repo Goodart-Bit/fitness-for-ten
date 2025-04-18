@@ -6,7 +6,7 @@ import GymGalleryCarousel from "../components/index/gallery";
 
 export default function Amenities() {
   return (
-    <div className="main-card description">
+    <div className="main-card sub-page">
       <h1>
         TAKE A LOOK <span className="accented">AROUND</span>
       </h1>

@@ -1,3 +1,18 @@
+
+/**
+ * @constant {Array<Object>} subscriptions
+ * @description An array of subscription plans offered by Fit4All, detailing the name, price, image path, enrollment link, and specific features of each plan.
+ * 
+ * Each subscription object contains:
+ * - `name` {string}: The name of the subscription plan (e.g., "Basic", "VIP+").
+ * - `price` {string}: The monthly cost of the subscription in USD.
+ * - `path` {string}: The relative path to the image representing the subscription.
+ * - `link` {string}: The URL for the membership enrollment page.
+ * - `details` {Array<string>}: A list of features and conditions associated with the subscription.
+ * - `guest` {boolean} [optional]: Indicates if the subscription is a guest pass (default is `false`).
+ * 
+ */
+
 const subscriptionDetails = {
   basicDetails: [
     "$49.00 Joining fee",
@@ -157,3 +172,20 @@ export const amenitiesExtend = [
     path: ["/gallery/ff10-020.jpg"],
   },
 ];
+
+// THE CREW
+
+export const crew = [
+  //owner 
+  {
+    name: 'Jorge',
+    description: '',
+    image_path: ''
+  },
+  //ownersOwner
+  {
+    name: 'Sydney',
+    description: '',
+    image_path: ''
+  }
+]

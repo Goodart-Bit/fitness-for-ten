@@ -13,7 +13,9 @@ export function NavBar() {
         <li>
           <Link href="/amenities">AMENITIES</Link>
         </li>
-        <li>ABOUT US</li>
+        <li>
+          <Link href="/about">ABOUT US</Link>
+        </li>
         <li>CONTACT US</li>
         <li>COMMUNITY INVOLVEMENT</li>
         <li>CAREERS</li>
