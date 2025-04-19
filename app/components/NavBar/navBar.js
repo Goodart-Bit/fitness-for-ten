@@ -16,7 +16,7 @@ export function NavBar() {
         <li>
           <Link href="/about">ABOUT US</Link>
         </li>
-        <li>CONTACT US</li>
+        <li><Link href="/contact">CONTACT US</Link></li>
         <li>COMMUNITY INVOLVEMENT</li>
         <li>CAREERS</li>
       </ul>

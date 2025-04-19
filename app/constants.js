@@ -65,7 +65,7 @@ export const subscriptions = [
   {
     name: "VIP+ GUEST",
     price: "25",
-    path: "gallery/_CSS0448.jpg",
+    path: "gallery/_CSS0527.jpg",
     link: "https://www.mymemberaccount.com/member-enrollment/10887/group/8882",
     details: subscriptionDetails.guestDetails,
     guest: true
@@ -173,19 +173,56 @@ export const amenitiesExtend = [
   },
 ];
 
-// THE CREW
+// FAQ Q&As
 
-export const crew = [
-  //owner 
+export const faq = [
   {
-    name: 'Jorge',
-    description: '',
-    image_path: ''
+    question: "What are your hours",
+    answer:
+      "Our hours are <strong>Monday to Friday 8:00 am - 9:00 pm</strong> and <strong>11:00 am to 5:00 pm</strong> on weekends. We do have <strong>24/7 memberships</strong> that allow you to use the gym at all times."
   },
-  //ownersOwner
   {
-    name: 'Sydney',
-    description: '',
-    image_path: ''
+    question: "How does the 24/7 guest pass work",
+    answer:
+      "You must purchase it online before entering the club. In order to enter our facility after hours you will have to be accompanied by an existing <strong>VIP+</strong> member."
+  },
+  {
+    question: "How do I cancel my membership",
+    answer:'In order to cancel your membership you can call Asf at <strong>1-800-525-8967</strong>, email them at <a href="mailto:membersupport@asfpaymentsolutions.com">membersupport@asfpaymentsolutions.com</a> or submit your request at the following link <a href="https://www.asfpaymentsolutions.com/members-support/" target="_blank" rel=\"noopener noreferrer\" class=\"accented\">asfpaymentsolutions.com</a>. Our cancellation policy is dependent on the membership you have. However, all memberships will require a <strong>written cancellation notice</strong>.'
+  },
+  {
+    question: "Do you offer a free trial",
+    answer:
+      "We do not offer free trials as we have <strong>free guest privileges</strong> with our <strong>VIP+</strong> membership and also due to our <strong>low prices</strong>. But our day passes are only <strong>$15.00</strong>. If you purchase a day pass and sign up after your workout we will give you a <strong>$15.00 credit</strong> towards your membership."
+  },
+  {
+    question: "How do your guest privileges work",
+    answer:
+      "You can bring a friend to workout during our <strong>staffed hours</strong>. All they need is a valid piece of I.D."
+  },
+  {
+    question: "How old do you have to be to workout",
+    answer:
+      "In order to workout at our facility you must be at least <strong>12 years old</strong> and a <strong>parent/guardian waiver</strong> must be signed and kept at the club."
+  },
+  {
+    question: "How can I tan",
+    answer:
+      "In order to tan you must be at least <strong>18 years old</strong> and hold a valid <strong>VIP</strong> or <strong>VIP+</strong> membership. We do not sell tanning minutes."
+  },
+  {
+    question: "Can someone takeover my membership",
+    answer:
+      "No, unfortunately the contract was made and signed with you. You may cancel your membership and have them start their own!"
+  },
+  {
+    question: "Personal training and Classes",
+    answer:
+      "At the time we do not offer <strong>personal training</strong> and/or <strong>fitness classes</strong> but we are looking into expanding this."
+  },
+  {
+    question: "What happens if I lost my scan card or 24/7 card",
+    answer:
+      "You must report this to the club so we can cancel your <strong>key tag</strong> and <strong>24/7 card</strong>. A new one of these may be purchased at the club."
   }
-]
+];

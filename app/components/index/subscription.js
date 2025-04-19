@@ -13,7 +13,7 @@ export default function SubscriptionPrev({
       style={{ backgroundImage: `url(${path})`, backgroundSize: "cover" }}
       className="card"
     >
-      {guest && <p>After hours drop in</p>}
+      {/*guest && <p>After hours drop in</p>*/}
       <h2>{name}</h2>
       <div>
         <p>Only</p>
