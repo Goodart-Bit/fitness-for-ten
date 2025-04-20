@@ -38,7 +38,7 @@ export default function Home() {
       </div>
       <div className={styles.separator}>
         <p>Your <span className="accented-2">body</span> can do it</p>
-        <p>It's time to convince your <span className="accented-2">mind</span></p>
+        <p>It&apos;s time to convince your <span className="accented-2">mind</span></p>
       </div>
       <div className={styles["amenities-holder"]}>
         <h2>OUR <span className="accented">AMENITIES</span>:</h2>

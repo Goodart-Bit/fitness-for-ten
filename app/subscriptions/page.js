@@ -19,15 +19,14 @@ export default function SubscriptionsPage() {
         OUR <span className="accented">MEMBERSHIPS</span>
       </h1>
       <p>
-        We offer flexible plans to suit every lifestyle, whether you're just
+        We offer flexible plans to suit every lifestyle, whether you&apos;re just
         getting started or ready to go all-in.
       </p>
       <div className="info-grid">
         {subscriptions.map((sub, index) => {
           return (
-            <div>
+            <div key={`subscription_${index}`}>
               <SubscriptionPrev
-                key={`subscription_${index}`}
                 name={sub.name}
                 price={sub.price}
                 path={sub.path}

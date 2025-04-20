@@ -11,9 +11,9 @@ export default function Amenities() {
         TAKE A LOOK <span className="accented">AROUND</span>
       </h1>
       <p>
-        Every part of the gym has a purpose — whether you're here to lift,
+        Every part of the gym has a purpose — whether you&apos;re here to lift,
         stretch, or take it easy for a bit. From open training zones to quiet
-        recovery areas, it’s all set up to help you move how you want.
+        recovery areas, it&apos;s all set up to help you move how you want.
       </p>
       <p>See more about our amenities below.</p>
       <h1>

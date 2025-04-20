@@ -142,8 +142,8 @@ export default function Contact() {
               list above?
             </h1>
             <p>
-              Send us a message, and we’ll be in touch shortly! Please make sure
-              you've checked the FAQ section before reaching out, your question
+              Send us a message, and we&apos;ll be in touch shortly! Please make sure
+              you&apos;ve checked the FAQ section before reaching out, your question
               may have already been answered there.
             </p>
           </div>
