@@ -65,7 +65,8 @@
 #contact-gallery {
     margin-top: 0.5rem;
     display: flex;
-    height: 700px;
+    margin: 2rem 0;
+    height: fit-content;
     width: 80%;
     align-self: center;
     align-items: center;
