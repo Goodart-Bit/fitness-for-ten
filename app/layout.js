@@ -16,24 +16,30 @@ const geistMono = Geist_Mono({
 
 const poppins = Poppins({
   variable: "--poppins",
-  weight: ['400', '600', '800'], // You can include other weights like '700' if needed
-  subsets: ['latin'],
-  display: 'swap',
+  weight: ["400", "600", "800"], // You can include other weights like '700' if needed
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata = {
   title: "Fitness for 10",
-  description: "The Canada's Prince Albert gym site"
+  description: "The Canada's Prince Albert gym site",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+          rel="stylesheet"
+        />
+      </head>
       <body className={`${poppins.variable}`}>
         <div className={styles.page}>
           <NavBar />
           <main className={styles.main}>{children}</main>
-          <Toaster position="top-right" reverseOrder={false}/>
+          <Toaster position="top-right" reverseOrder={false} />
           <Footer />
         </div>
       </body>

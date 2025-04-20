@@ -1,25 +1,72 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import "./navBar.css";
+import { useEffect, useState } from "react";
+
+const routes = [
+  { name: "HOME", href: "/" },
+  { name: "AMENITIES", href: "/amenities" },
+  { name: "ABOUT US", href: "/about" },
+  { name: "CONTACT US", href: "/contact" },
+  { name: "COMUNNITY INVOLVEMENT", href: "/" },
+  { name: "CAREERS", href: "/" },
+];
+
+export function Menu({setExpandMenu}) {
+  return (
+    <div id="menu-box">
+      <ul>
+        {routes.map((route, idx) => {
+          return (
+            <li key={`menu_route${idx}`}>
+              <Link href={route.href} onClick={() => {setExpandMenu(false)}}>{route.name}</Link>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}
 
 export function NavBar() {
+  const [expandMenu, setExpandMenu] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkWidth = () => setIsMobile(window.innerWidth < 1000);
+
+    checkWidth(); // initial check
+    window.addEventListener("resize", checkWidth);
+
+    return () => window.removeEventListener("resize", checkWidth);
+  }, []);
+
   return (
     <div className="nav-container">
       <ul className="flex-nav">
         <img src="/bu-assets/ff10-1.png" alt="Gym logo" />
-        <li>
-          <Link href="/">HOME</Link>
-        </li>
-        <li>
-          <Link href="/amenities">AMENITIES</Link>
-        </li>
-        <li>
-          <Link href="/about">ABOUT US</Link>
-        </li>
-        <li><Link href="/contact">CONTACT US</Link></li>
-        <li>COMMUNITY INVOLVEMENT</li>
-        <li>CAREERS</li>
+        {routes.map((route, idx) => {
+          return (
+            <li key={`main_route${idx}`}>
+              <Link href={route.href}>{route.name}</Link>
+            </li>
+          );
+        })}
+        {isMobile && (
+          <li
+            id="menu"
+            onClick={() => {
+              setExpandMenu(!expandMenu);
+            }}
+          >
+            <p>Menu</p>
+            <span className="material-symbols-outlined">menu</span>
+          </li>
+        )}
       </ul>
+      {expandMenu && <Menu setExpandMenu={setExpandMenu}/>}
     </div>
   );
 }
