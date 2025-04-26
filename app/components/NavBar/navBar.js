@@ -14,14 +14,26 @@ const routes = [
   { name: "CAREERS", href: "/" },
 ];
 
-export function Menu({setExpandMenu}) {
+const socials = {
+  facebook: "https://www.facebook.com/FF10PA/",
+  instagram: "https://www.instagram.com/fitnessfor10_pa/"
+}
+
+export function Menu({ setExpandMenu }) {
   return (
     <div id="menu-box">
       <ul>
         {routes.map((route, idx) => {
           return (
             <li key={`menu_route${idx}`}>
-              <Link href={route.href} onClick={() => {setExpandMenu(false)}}>{route.name}</Link>
+              <Link
+                href={route.href}
+                onClick={() => {
+                  setExpandMenu(false);
+                }}
+              >
+                {route.name}
+              </Link>
             </li>
           );
         })}
@@ -66,7 +78,7 @@ export function NavBar() {
           </li>
         )}
       </ul>
-      {expandMenu && <Menu setExpandMenu={setExpandMenu}/>}
+      {expandMenu && <Menu setExpandMenu={setExpandMenu} />}
     </div>
   );
 }
@@ -78,13 +90,23 @@ export function Footer() {
         <ul className="footer-option-list footer-list">
           <li className="accented">More</li>
           <li className="bullet-ovr">
-            <a>FAQ</a>
+            <Link
+              href={routes.find((route) => route.name === "CONTACT US")?.href}
+            >
+              FAQ
+            </Link>
           </li>
           <li className="bullet-ovr">
-            <a>Our installations</a>
+            <Link
+              href={routes.find((route) => route.name === "AMENITIES")?.href}
+            >
+              Our installations
+            </Link>
           </li>
           <li className="bullet-ovr">
-            <a>Careers</a>
+            <Link href={routes.find((route) => route.name === "HOME")?.href}>
+              Our installations
+            </Link>
           </li>
         </ul>
         <ul className="footer-option-list footer-list">
@@ -93,30 +115,30 @@ export function Footer() {
             <ul className="socials">
               <li>
                 <img src="/bu-assets/instagram.svg" className="social-icon" />
+                <Link href={socials.instagram} target="_blank">
+                  <span className="accented">@</span>fitnessfor10_pa
+                </Link>
               </li>
               <li>
                 <img src="/bu-assets/facebook.svg" className="social-icon" />
-              </li>
-              <li>
-                <img src="/bu-assets/twitter.svg" className="social-icon" />
+                <Link href={socials.facebook} target="_blank">
+                  <span className="accented">@</span>ff10pa
+                </Link>
               </li>
             </ul>
-          </li>
-          <li>
-            <span className="accented">@</span>fit4all
           </li>
         </ul>
         <ul className="footer-option-list footer-list">
           <li className="accented">Operating hours</li>
           <li className="bullet-ovr">Monday to Friday</li>
-          <li className="bullet-ovr">Saturday</li>
-          <li className="bullet-ovr">Sunday</li>
+          <li className="bullet-ovr">Saturday and Sunday</li>
+          <li className="bullet-ovr">Holidays and stats</li>
         </ul>
         <ul className="footer-option-list timings">
           <li>&nbsp;</li>
-          <li>5:00 - 22:00</li>
-          <li>9:00 - 22:00</li>
-          <li>9:00 - 18:00</li>
+          <li>8:00AM - 9:00PM</li>
+          <li>11:00AM - 5:00PM</li>
+          <li>Unstaffed</li>
         </ul>
       </div>
       <div className="accented">Copyright @ 2025 . All rights reserved.</div>

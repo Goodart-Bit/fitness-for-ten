@@ -36,7 +36,7 @@ export default function Home() {
         </div>
         <Link href="/subscriptions" className="btn">See all</Link>
       </div>
-      <div className={styles.separator}>
+      <div className="separator">
         <p>Your <span className="accented-2">body</span> can do it</p>
         <p>It&apos;s time to convince your <span className="accented-2">mind</span></p>
       </div>

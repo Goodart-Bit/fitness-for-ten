@@ -146,27 +146,6 @@ div.img-holder {
   height: 100%;
 }
 
-.separator {
-  background-image: url("/gallery/ff10-105.jpg");
-  color: white;
-  width: 100vw;
-  min-height: 13vh;
-  max-height: fit-content;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding: 20px 0;
-}
-
-.separator > span {
-  display: inline-block;
-}
-
 .amenities {
   display: flex;
   height: fit-content;

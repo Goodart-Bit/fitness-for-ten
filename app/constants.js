@@ -15,24 +15,25 @@
 
 const subscriptionDetails = {
   basicDetails: [
-    "$49.00 Joining fee",
+    "$49 Joining fee",
     "Club access during staffed hours",
-    "$39.00 annual Maintenance fee",
+    "$39 annual Maintenance fee",
     "60 day written Cancellation notice"
   ],
   vipDetails: [
-    "$49.00 Joining fee",
+    "$49 Joining fee",
     "24/7 access",
     "Racquetball access",
     "Wallyball access",
     "Tanning privileges",
     "Guest privileges",
-    "$39.00 annual Maintenance fee",
-    "60 day written Cancellation notice"
+    "$39 annual Maintenance fee",
+    "60 day written cancellation notice"
   ],
   basicPlusDetails: [
-    "All perks from the basic subscription",
-    "Club Access during staffed hours",
+    "$39 annual maintenance fee",
+    "60 day written cancellation notice",
+    "$89 cancellation fee"
   ],
   guestDetails: [
     "Access after hours for one workout session",
@@ -66,7 +67,7 @@ export const subscriptions = [
     name: "VIP+ GUEST",
     price: "25",
     path: "gallery/_CSS0527.jpg",
-    link: "https://www.mymemberaccount.com/member-enrollment/10887/group/8882",
+    link: "https://www.mymemberaccount.com/member-enrollment/10887/group/2640",
     details: subscriptionDetails.guestDetails,
     guest: true
   }
@@ -193,7 +194,7 @@ export const faq = [
   {
     question: "Do you offer a free trial",
     answer:
-      "We do not offer free trials as we have <strong>free guest privileges</strong> with our <strong>VIP+</strong> membership and also due to our <strong>low prices</strong>. But our day passes are only <strong>$15.00</strong>. If you purchase a day pass and sign up after your workout we will give you a <strong>$15.00 credit</strong> towards your membership."
+      "We do not offer free trials as we have <strong>free guest privileges</strong> with our <strong>VIP+</strong> membership and also due to our <strong>low prices</strong>. But our day passes are only <strong>$15</strong>. If you purchase a day pass and sign up after your workout we will give you a <strong>$15 credit</strong> towards your membership."
   },
   {
     question: "How do your guest privileges work",

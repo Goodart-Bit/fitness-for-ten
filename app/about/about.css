@@ -1,3 +1,7 @@
+.main-card.sub-page > h1 {
+    align-self: center;
+}
+
 div.text-image {
     display: flex;
     align-items: center;
@@ -14,11 +18,31 @@ div.text-image {
 
 .text-image > img {
     height: 45vh;
+}
+
+.main-card.sub-page > div {
+    padding: 1rem;
+}
+
+.separator {
+    margin-left: -2.5rem;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-card.sub-page.about-page img {
+    width: clamp(100px, 300px, 100vw);
+    align-self: center;
     border-radius: 20px;
     border: #ED542E solid 2px;
     object-fit: cover;
 }
 
-.main-card.sub-page > div {
-    padding: 1rem;
+
+.main-card.sub-page.about-page ol {
+    margin-left: 3rem;
 }
