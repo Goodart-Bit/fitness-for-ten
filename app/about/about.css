@@ -19,16 +19,18 @@ div.text-image {
     justify-content: space-between;
 }
 
+.text-image > img {
+    height: 100%;
+}
+
 @media (max-width: 825px) {
     .text-image > div:first-child {
         height: fit-content;
     }
-}
 
-
-
-.text-image > img {
-    height: 45vh;
+    .text-image > img {
+        height: 40vh;
+    }
 }
 
 .main-card.sub-page > div {
