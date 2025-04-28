@@ -16,8 +16,8 @@ const routes = [
 
 const socials = {
   facebook: "https://www.facebook.com/FF10PA/",
-  instagram: "https://www.instagram.com/fitnessfor10_pa/"
-}
+  instagram: "https://www.instagram.com/fitnessfor10_pa/",
+};
 
 export function Menu({ setExpandMenu }) {
   return (
@@ -100,12 +100,12 @@ export function Footer() {
             <Link
               href={routes.find((route) => route.name === "AMENITIES")?.href}
             >
-              Our installations
+              Amenities
             </Link>
           </li>
           <li className="bullet-ovr">
             <Link href={routes.find((route) => route.name === "HOME")?.href}>
-              Our installations
+              Home
             </Link>
           </li>
         </ul>
@@ -113,18 +113,18 @@ export function Footer() {
           <li className="accented">Follow us</li>
           <li>
             <ul className="socials">
-              <li>
-                <img src="/bu-assets/instagram.svg" className="social-icon" />
-                <Link href={socials.instagram} target="_blank">
+              <Link href={socials.instagram} target="_blank">
+                <li>
+                  <img src="/bu-assets/instagram.svg" className="social-icon" />
                   <span className="accented">@</span>fitnessfor10_pa
-                </Link>
-              </li>
-              <li>
-                <img src="/bu-assets/facebook.svg" className="social-icon" />
-                <Link href={socials.facebook} target="_blank">
+                </li>
+              </Link>
+              <Link href={socials.facebook} target="_blank">
+                <li>
+                  <img src="/bu-assets/facebook.svg" className="social-icon" />
                   <span className="accented">@</span>ff10pa
-                </Link>
-              </li>
+                </li>
+              </Link>
             </ul>
           </li>
         </ul>

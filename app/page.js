@@ -7,7 +7,7 @@ import React, { useRef } from 'react';
 import Link from "next/link";
 import { amenities } from './constants'
 
-const placeMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2391.053135306483!2d-105.75318692361206!3d53.18102668708066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53017af09db9ae4b%3A0xaac478e64febee33!2sFitness%20For%2010%2024%2F7!5e0!3m2!1ses-419!2sca!4v1743873585634!5m2!1ses-419!2sca"
+const placeMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2391.0531392958155!2d-105.75548291065162!3d53.181026615517226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53017af09db9ae4b%3A0xaac478e64febee33!2sFitness%20For%2010%2024%2F7!5e0!3m2!1sen!2sco!4v1745844315695!5m2!1sen!2sco"
 
 export default function Home() {
   const targetRef = useRef(null);

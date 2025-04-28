@@ -63,29 +63,33 @@ export default function About() {
       <h1 className="accented-2">DRIVEN BY PURPOSE: OUR MISSION & VISION</h1>
       <div className="text-image">
         <div>
-          <h2>MISSION</h2>
-          <p>
-            At Fitness For 10, our mission is to create an inclusive, welcoming
-            space where everyone regardless of their fitness level feels
-            supported, motivated, and empowered to reach their goals. As a
-            locally owned and operated business, our passion for fitness and
-            community drives everything we do. We’re committed to bettering our
-            club every day to meet the high standards our members deserve, while
-            staying deeply involved in the community that inspires us. Fitness
-            For 10 isn’t just a gym it’s a place to grow, connect, and become
-            your best self.
-          </p>
-          <h2>VISION</h2>
-          <p>
-            Our vision is to build a strong, united fitness community where
-            everyone feels like family. We strive to be more than just a place
-            to work out we aim to be a hub of transformation, connection, and
-            support for Prince Albert. By continuously improving our space,
-            staying active in our community, and fostering a culture of
-            positivity and progress, we envision a future where Fitness For 10
-            is a pillar of strength in people’s lives inside and outside the
-            gym.
-          </p>
+          <div>
+            <h2>MISSION</h2>
+            <p>
+              At Fitness For 10, our mission is to create an inclusive,
+              welcoming space where everyone regardless of their fitness level
+              feels supported, motivated, and empowered to reach their goals. As
+              a locally owned and operated business, our passion for fitness and
+              community drives everything we do. We’re committed to bettering
+              our club every day to meet the high standards our members deserve,
+              while staying deeply involved in the community that inspires us.
+              Fitness For 10 isn’t just a gym it’s a place to grow, connect, and
+              become your best self.
+            </p>
+          </div>
+          <div>
+            <h2>VISION</h2>
+            <p>
+              Our vision is to build a strong, united fitness community where
+              everyone feels like family. We strive to be more than just a place
+              to work out we aim to be a hub of transformation, connection, and
+              support for Prince Albert. By continuously improving our space,
+              staying active in our community, and fostering a culture of
+              positivity and progress, we envision a future where Fitness For 10
+              is a pillar of strength in people’s lives inside and outside the
+              gym.
+            </p>
+          </div>
         </div>
         <img src="/gallery/_CSS0876.jpg" className=""></img>
       </div>
