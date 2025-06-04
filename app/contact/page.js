@@ -142,7 +142,7 @@ export default function Contact() {
                 out, your question may have already been answered there.{" "}
                 <strong>
                   This section is no designated for membership cancellations,
-                  check the 'How do I cancel my membership?' card above for more
+                  check the &apos;How do I cancel my membership?&apos; card above for more
                   information.{" "}
                 </strong>
               </p>
