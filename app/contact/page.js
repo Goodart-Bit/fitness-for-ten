@@ -37,16 +37,15 @@ function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+    const data = new FormData();
+    data.append("name", formData.name);
+    data.append("email", formData.email);
+    data.append("message", formData.message);
+    data.append("type", "contact");
+    data.append("topic", formData.topic);
     const response = await fetch("/api/contact-inquiry", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: formData.name,
-        email: formData.email,
-        topic: formData.topic,
-        message: formData.message,
-      }),
+      body: data,
     });
     response.ok
       ? toast.success(
@@ -128,28 +127,35 @@ export default function Contact() {
           );
         })}
       </div>
+      {expanded && (
+        <div id="contact-gallery">
+          <img src="/gallery/_CSS1236.jpg"></img>
+          <div id="form-container">
+            <div>
+              <h1 className="accented">
+                Need assistance or have an specific question not covered in the
+                list above?
+              </h1>
+              <p>
+                Send us a message, and we&apos;ll be in touch shortly! Please
+                make sure you&apos;ve checked the FAQ section before reaching
+                out, your question may have already been answered there.{" "}
+                <strong>
+                  This section is no designated for membership cancellations,
+                  check the 'How do I cancel my membership?' card above for more
+                  information.{" "}
+                </strong>
+              </p>
+            </div>
+            <ContactForm></ContactForm>
+          </div>
+        </div>
+      )}
       {faq.length > 3 && (
         <button id="expand-faq" onClick={() => setExpanded((prev) => !prev)}>
           {expanded ? "See less" : "See more"}
         </button>
       )}
-      <div id="contact-gallery">
-        <img src="/gallery/_CSS1236.jpg"></img>
-        <div id="form-container">
-          <div>
-            <h1 className="accented">
-              Need assistance or have an specific question not covered in the
-              list above?
-            </h1>
-            <p>
-              Send us a message, and we&apos;ll be in touch shortly! Please make sure
-              you&apos;ve checked the FAQ section before reaching out, your question
-              may have already been answered there.
-            </p>
-          </div>
-          <ContactForm></ContactForm>
-        </div>
-      </div>
     </div>
   );
 }

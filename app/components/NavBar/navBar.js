@@ -10,8 +10,8 @@ const routes = [
   { name: "AMENITIES", href: "/amenities" },
   { name: "ABOUT US", href: "/about" },
   { name: "CONTACT US", href: "/contact" },
-  { name: "COMUNNITY INVOLVEMENT", href: "/" },
-  { name: "CAREERS", href: "/" },
+  { name: "COMUNNITY INVOLVEMENT", href: "/community-involvement" },
+  { name: "CAREERS", href: "/careers" },
 ];
 
 const socials = {

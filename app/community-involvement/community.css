@@ -1,0 +1,45 @@
+div.letter {
+    padding-left: 1rem;
+    border-left: #4086C2 4px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main-card ul {
+    display: block;
+    list-style-type: disc;
+    padding-left: 10px;
+}
+
+.main-card ul li {
+    border: none;
+    display: list-item;
+    font-weight: 500;
+}
+
+.main-card ul li:hover {
+    color:black;
+    cursor: auto;
+}
+
+#form-container p {
+ display: inline;
+ margin-left: 10px;
+ color: white;
+}
+
+#form-container > div > p {
+    color: black;
+}
+
+
+
+#form-container input[type="checkbox"] {
+    display: inline;
+    width: 30px;
+}
+
+#form-container img {
+    width: 50px;
+}

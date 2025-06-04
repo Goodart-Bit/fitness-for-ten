@@ -1,0 +1,20 @@
+
+
+#form-container.career img {
+    width: 350px;
+    height: 90%;
+    align-self: center;
+    border-radius: 20px;
+}
+
+#form-container.career > div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#form-container.career {
+    padding: 0;
+    margin-left: -1.5rem;
+}
