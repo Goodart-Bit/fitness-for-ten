@@ -121,11 +121,11 @@ export default function Careers() {
         <p>
           We’re looking for friendly, motivated people to help us create a great
           experience for our members. Apply to our team by filling out the
-          following form. {" "}
+          following form.{" "}
           <strong>
-            Note that this section is no designated for membership
-            cancellations, for that more information on that please refer to our
-            F.A.Q. in the contact us page.
+            Note that this section is not designated for membership
+            cancellations. For cancellations please refer to our contact us
+            section.
           </strong>
         </p>
         <div id="form-container" class="career">

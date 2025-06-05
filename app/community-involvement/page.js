@@ -30,7 +30,8 @@ export default function CommunityInvolvement() {
       { name: "email", placeholder: "Your email" },
       {
         name: "message",
-        placeholder: "Leave a message (optional, but always appreciated!)",
+        placeholder:
+          "Please attach all the details regarding your request here",
         optional: true,
         text: true,
       },
@@ -140,9 +141,9 @@ export default function CommunityInvolvement() {
             Please send us all the information regarding your request.
             <strong>
               {" "}
-              Note that this section is no designated for membership
-              cancellations, for that more information on that please refer to
-              our F.A.Q. in the contact us page.
+              Note that this section is not designated for membership
+              cancellations. For cancellations please refer to our contact us
+              section.
             </strong>
           </p>
         </div>
