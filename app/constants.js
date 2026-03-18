@@ -15,7 +15,7 @@
 
 const subscriptionDetails = {
   basicDetails: [
-    "$49 Joining fee",
+    "$89 Joining fee",
     "Club access during staffed hours",
     "$39 annual Maintenance fee",
     "60 day written Cancellation notice"
