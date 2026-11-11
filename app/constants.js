@@ -13,7 +13,7 @@
  * 
  */
 
-const subscriptionDetails = {
+export const subscriptionDetails = {
   basicDetails: [
     "$49 Joining fee",
     "Club access during staffed hours",
@@ -46,6 +46,38 @@ const subscriptionDetails = {
     "Must be accompanied by an existing VIP+ member"
   ],
 };
+
+export const subscriptions = [
+  {
+    name: "VIP",
+    price: "22",
+    path: "gallery/_CSS1084.jpg",
+    link: "https://www.mymemberaccount.com/member-enrollment/10887/group/8924",
+    details: subscriptionDetails.basicDetails
+  },
+  {
+    name: "VIP+",
+    price: "26",
+    path: "gallery/_CSS0713.jpg",
+    link: "https://www.mymemberaccount.com/member-enrollment/10887/group/8882",
+    details: subscriptionDetails.vipDetails
+  },
+  {
+    name: "Basic+",
+    price: "10",
+    path: "gallery/_CSS2071.jpg",
+    link: "https://www.mymemberaccount.com/member-enrollment/10887/group/8881",
+    details: subscriptionDetails.basicPlusDetails
+  },
+  {
+    name: "VIP+ GUEST",
+    price: "25",
+    path: "gallery/_CSS0527.jpg",
+    link: "https://www.mymemberaccount.com/member-enrollment/10887/group/2640",
+    details: subscriptionDetails.guestDetails,
+    guest: true
+  }
+];
 
 
 /**
@@ -87,7 +119,7 @@ export const amenities = [
   },
 ];
 
-const trainingZones = [
+export const trainingZones = [
   {
     title: "Women’s Only Area",
     description:
@@ -115,7 +147,7 @@ const trainingZones = [
   },
 ];
 
-const exclusiveFeatures = [
+export const exclusiveFeatures = [
   {
     title: "24/7 access",
     description: ""
