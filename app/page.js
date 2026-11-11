@@ -30,8 +30,8 @@ export default function Home() {
       <div className={styles.memberships} ref={targetRef}>
         <h2>OUR MEMBERSHIPS</h2>
         <div className={styles["member-cards"]}>
-          <SubscriptionPrev name="Basic" price="15" path="gallery/_CSS1084.jpg" link="https://www.mymemberaccount.com/member-enrollment/10887/group/8924"></SubscriptionPrev>
-          <SubscriptionPrev name="VIP+" price="24" path="gallery/_CSS0713.jpg" link="https://www.mymemberaccount.com/member-enrollment/10887/group/8882"></SubscriptionPrev>
+          <SubscriptionPrev name="VIP" price="22" path="gallery/_CSS1084.jpg" link="https://www.mymemberaccount.com/member-enrollment/10887/group/8924"></SubscriptionPrev>
+          <SubscriptionPrev name="VIP+" price="26" path="gallery/_CSS0713.jpg" link="https://www.mymemberaccount.com/member-enrollment/10887/group/8882"></SubscriptionPrev>
           <SubscriptionPrev name="Basic+" price="10" path="gallery/_CSS2071.jpg" link="https://www.mymemberaccount.com/member-enrollment/10887/group/8881"></SubscriptionPrev>
         </div>
         <Link href="/subscriptions" className="btn">See all</Link>
