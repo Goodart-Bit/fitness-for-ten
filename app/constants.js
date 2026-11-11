@@ -15,63 +15,37 @@
 
 const subscriptionDetails = {
   basicDetails: [
-    "$89 Joining fee",
+    "$49 Joining fee",
     "Club access during staffed hours",
-    "$39 annual Maintenance fee",
-    "60 day written Cancellation notice"
+    "Unlimited racquetball & wallyball",
+    "Unlimited guest privileges during staffed hours",
+    "Tanning privileges during staffed hours",
+    "$39 annual maintenance fee",
+    "60 day written cancellation notice"
   ],
   vipDetails: [
     "$49 Joining fee",
-    "24/7 access",
-    "Racquetball access",
-    "Wallyball access",
-    "Tanning privileges",
-    "Guest privileges",
-    "$39 annual Maintenance fee",
+    "24/7 club access",
+    "Unlimited racquetball & wallyball",
+    "Unlimited guest privileges during staffed hours",
+    "Tanning privileges during staffed hours",
+    "$39 annual maintenance fee",
     "60 day written cancellation notice"
   ],
   basicPlusDetails: [
+    "$89 Joining fee",
+    "Club access during staffed hours",
     "$39 annual maintenance fee",
+    "$89 cancellation fee",
     "60 day written cancellation notice",
-    "$89 cancellation fee"
+    "1 year membership term",
+    "Automatic EFT renewal at $16 biweekly"
   ],
   guestDetails: [
     "Access after hours for one workout session",
-    "Must be accompained by an existing VIP+ member",
+    "Must be accompanied by an existing VIP+ member"
   ],
 };
-
-export const subscriptions = [
-  {
-    name: "Basic",
-    price: "15",
-    path: "gallery/_CSS1084.jpg",
-    link: "https://www.mymemberaccount.com/member-enrollment/10887/group/8924",
-    details: subscriptionDetails.basicDetails
-  },
-  {
-    name: "VIP+",
-    price: "24",
-    path: "gallery/_CSS0713.jpg",
-    link: "https://www.mymemberaccount.com/member-enrollment/10887/group/8882",
-    details: subscriptionDetails.vipDetails
-  },
-  {
-    name: "Basic+",
-    price: "10",
-    path: "gallery/_CSS2071.jpg",
-    link: "https://www.mymemberaccount.com/member-enrollment/10887/group/8881",
-    details: subscriptionDetails.basicPlusDetails
-  },
-  {
-    name: "VIP+ GUEST",
-    price: "25",
-    path: "gallery/_CSS0527.jpg",
-    link: "https://www.mymemberaccount.com/member-enrollment/10887/group/2640",
-    details: subscriptionDetails.guestDetails,
-    guest: true
-  }
-];
 
 
 /**
