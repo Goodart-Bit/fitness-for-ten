@@ -10,12 +10,12 @@
   },
   "dependencies": {
     "formidable": "^3.5.4",
-    "next": "15.2.4",
-    "nodemailer": "^6.10.1",
+    "next": "^15.5.29",
+    "nodemailer": "^10.6.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.2",
-    "swiper": "^11.2.6"
+    "swiper": "^14.4.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
